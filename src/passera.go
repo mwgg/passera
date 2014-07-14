@@ -15,8 +15,9 @@ import (
 	"flag"
 )
 
-func hash(pw string, len int) string {
-	salt := passwd(pw, len)
+func hash(pw string) string {
+
+	salt := passwd(pw, 64)
 	runs := 0
 
 	for i, _ := range salt {
@@ -34,12 +35,13 @@ func hash(pw string, len int) string {
 }
 
 func passwd(str string, len int) string {
+
 	hasher := sha512.New()
 	hasher.Write([]byte(str))
 	hash := base64.StdEncoding.EncodeToString(hasher.Sum(nil))
 
 	replacer := sha512.New()
-	replacer.Write([]byte(strconv.FormatInt(time.Now().UnixNano(), 10)))
+	replacer.Write([]byte(hash))
 	replace := base64.StdEncoding.EncodeToString(replacer.Sum(nil))
 
 	replaceables := [21]string{ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "]", "[", "{", "}", "?", "<", ">" }
@@ -88,8 +90,7 @@ func main() {
 
 	fmt.Printf(">> ")
 	phrase := gopass.GetPasswd()
-
-	pw := passwd( hash( string(phrase), length ), length )
+	pw := passwd( hash( string(phrase) ), length )
 
 	if *show == true {
 		fmt.Println(pw)
@@ -104,6 +105,4 @@ func main() {
 	}
 
 	if *nofo != true && *show != true { phony(length) }
-
-
 }
