@@ -11,7 +11,7 @@ as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
 
-### Turn `passToGithub` into `XkvsyucbQu!hOl0J`
+#### Turn `passToGithub` into `XkvsyucbQu!hOl0J`
 
 This software is for privacy-aware people that understand the need to
 have strong unique passwords for each website, yet don't want to use
