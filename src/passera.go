@@ -15,7 +15,7 @@ import (
 	"flag"
 )
 
-func hash(pw string) string {
+func hash(pw string, len int) string {
 
 	salt := passwd(pw, 64)
 	runs := 0
@@ -23,7 +23,7 @@ func hash(pw string) string {
 	for i, _ := range salt {
 		runs = runs + int(salt[i])
 	}
-
+	runs += len
 	for i:=0; i<runs; i++ {
 		hasher := sha512.New()
 		hasher.Write([]byte(salt+pw))
@@ -76,7 +76,6 @@ func main() {
 	flag.IntVar(&secs, "t", 10, "seconds to keep password in clipboard")
 	nofo := flag.Bool("d", false, "do not copy phony passwords before and after the real one ")
 	show := flag.Bool("s", false, "only show the password on the screen")
-
 	flag.Parse()
 
 	if length > 64 {
@@ -91,7 +90,7 @@ func main() {
 
 	fmt.Printf(">> ")
 	phrase := gopass.GetPasswd()
-	pw := passwd( hash( string(phrase) ), length )
+	pw := passwd( hash( string(phrase), length ), length )
 
 	if *show == true {
 		fmt.Println(pw)
