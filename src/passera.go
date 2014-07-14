@@ -76,6 +76,7 @@ func main() {
 	flag.IntVar(&secs, "t", 10, "seconds to keep password in clipboard")
 	nofo := flag.Bool("d", false, "do not copy phony passwords before and after the real one ")
 	show := flag.Bool("s", false, "only show the password on the screen")
+
 	flag.Parse()
 
 	if length > 64 {
