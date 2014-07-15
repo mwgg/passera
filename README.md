@@ -4,7 +4,7 @@ A simple tool written in Go that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service.
 
-Linux and windows binaries are available for download from this repository.
+Linux and Windows binaries are available for download from this repository.
 
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
