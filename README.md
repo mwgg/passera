@@ -11,7 +11,7 @@ as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
 
-Linux and Windows binaries are available for download from this repository.
+Linux and Windows binaries are available for download from <a href="https://mw.gg/passera" target="_blank">my website</a>.
 
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
