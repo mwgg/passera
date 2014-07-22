@@ -4,6 +4,8 @@ A simple tool written in Go that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service.
 
+##### GUI coming soon!
+
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
 for yourself that will allow unique passphases for every website, such
@@ -55,7 +57,7 @@ Disable copying fake passwords to clipboard before and after the real password:
 $ passera -d 
 ```
 
-Disable copying passwords to clipboard altogether, only show the real password on the screen (be sure to clean up your bash history):
+Disable copying passwords to clipboard altogether, only show the real password on the screen (not saved in bash history):
 
 ```
 $ passera -s
@@ -65,3 +67,30 @@ Specify time delay (in seconds) before clipboard is replaced with a phony passwo
 ```
 $ passera -t 60
 ```
+
+Create a password without special characters ($, ^, @, !, etc.):
+```
+$ passera -c=false
+```
+
+Enter passphrases twice to ensure correct entry:
+```
+$ passera -v
+>> 
+>>> 
+Copied to clipboard
+Clearing in 9
+```
+Or otherwise:
+```
+$ passera -v
+>> 
+>>> 
+Passwords did not match
+```
+
+### Changelog:
+##### July 22, 2014:
+Added option to create passwords without special characters.
+Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (unless specified otherwise by the `-t` option).
+Added `-v` option to verify entered passphrases twice, to ensure correct input when setting password on a website.

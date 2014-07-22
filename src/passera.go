@@ -15,9 +15,9 @@ import (
 	"flag"
 )
 
-func hash(pw string, len int) string {
+func hash(pw string, len int, chars bool) string {
 
-	salt := passwd(pw, 64)
+	salt := passwd(pw, 64, chars)
 	runs := 0
 
 	for i, _ := range salt {
@@ -34,7 +34,7 @@ func hash(pw string, len int) string {
 	return pw
 }
 
-func passwd(str string, len int) string {
+func passwd(str string, len int, chars bool ) string {
 
 	hasher := sha512.New()
 	hasher.Write([]byte(str))
@@ -44,26 +44,30 @@ func passwd(str string, len int) string {
 	replacer.Write([]byte(hash))
 	replace := base64.StdEncoding.EncodeToString(replacer.Sum(nil))
 
-	replaceables := [21]string{ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "]", "[", "{", "}", "?", "<", ">" }
-	r, _ := regexp.Compile("[0-9]")
-	nums := r.FindAllString(hash, 1)
 	passwd := hash[0:len]
 
-	num := 0
-	var curnum int
-	for _, c := range replace[0:len/2] {
-		curnum, _ = strconv.Atoi(nums[0])
-		num = num + curnum
-		if num > 20 {
-			num = num - 20
+	if chars == true {
+		replaceables := [21]string{ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "]", "[", "{", "}", "?", "<", ">" }
+		r, _ := regexp.Compile("[0-9]")
+		nums := r.FindAllString(hash, 1)
+
+		num := 0
+		var curnum int
+		for _, c := range replace[0:len / 2] {
+			curnum, _ = strconv.Atoi(nums[0])
+			num = num+curnum
+			if num > 20 {
+				num = num-20
+			}
+			passwd = strings.Replace(passwd, string(c), replaceables[num], 1)
 		}
-		passwd = strings.Replace(passwd, string(c), replaceables[num], 1)
 	}
+
 	return passwd
 }
 
 func phony(length int) {
-	phony := passwd(strconv.FormatInt(time.Now().UnixNano(), 10), length)
+	phony := passwd(strconv.FormatInt(time.Now().UnixNano(), 10), length, true)
 	clipboard.WriteAll(phony)
 }
 
@@ -76,6 +80,8 @@ func main() {
 	flag.IntVar(&secs, "t", 10, "seconds to keep password in clipboard")
 	nofo := flag.Bool("d", false, "do not copy phony passwords before and after the real one ")
 	show := flag.Bool("s", false, "only show the password on the screen")
+	chars := flag.Bool("c", true, "use special characters in the password (!, @, #, etc.)")
+	vrf := flag.Bool("v", false, "ask for password twice to verify its correctness when setting a password for a website")
 	flag.Parse()
 
 	if length > 64 {
@@ -90,10 +96,25 @@ func main() {
 
 	fmt.Printf(">> ")
 	phrase := gopass.GetPasswd()
-	pw := passwd( hash( string(phrase), length ), length )
+
+	if *vrf == true {
+		fmt.Printf(">>> ")
+		phrase2 := gopass.GetPasswd()
+		if string(phrase) != string(phrase2) {
+			fmt.Println("Passwords did not match")
+			return
+		}
+
+	}
+
+	pw := passwd( hash( string(phrase), length, *chars ), length, *chars )
 
 	if *show == true {
-		fmt.Println(pw)
+
+		os.Stdout.Write([]byte(pw+"\r"))
+		time.Sleep(time.Duration(secs) * 1000000000)
+		os.Stdout.Write([]byte("                                                                \r\n"))
+
 	} else {
 		clipboard.WriteAll(pw)
 		fmt.Println("Copied to clipboard")
