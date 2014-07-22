@@ -70,7 +70,7 @@ $ passera -t 60
 
 Create a password without special characters ($, ^, @, !, etc.):
 ```
-$ passera -c=false
+$ passera -c
 ```
 
 Enter passphrases twice to ensure correct entry:
@@ -91,7 +91,7 @@ Passwords did not match
 
 ### Changelog:
 ##### July 22, 2014:
-Added option to create passwords without special characters.
+Added `-c` option to create passwords without special characters.
 
 Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (unless specified otherwise by the `-t` option).
 

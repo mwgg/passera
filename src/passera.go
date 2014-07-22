@@ -46,7 +46,7 @@ func passwd(str string, len int, chars bool ) string {
 
 	passwd := hash[0:len]
 
-	if chars == true {
+	if chars == false {
 		replaceables := [21]string{ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "]", "[", "{", "}", "?", "<", ">" }
 		r, _ := regexp.Compile("[0-9]")
 		nums := r.FindAllString(hash, 1)
@@ -80,7 +80,7 @@ func main() {
 	flag.IntVar(&secs, "t", 10, "seconds to keep password in clipboard")
 	nofo := flag.Bool("d", false, "do not copy phony passwords before and after the real one ")
 	show := flag.Bool("s", false, "only show the password on the screen")
-	chars := flag.Bool("c", true, "use special characters in the password (!, @, #, etc.)")
+	chars := flag.Bool("c", false, "disable use of special characters in the password (!, @, #, etc.)")
 	vrf := flag.Bool("v", false, "ask for password twice to verify its correctness when setting a password for a website")
 	flag.Parse()
 
