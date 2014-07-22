@@ -93,6 +93,6 @@ Passwords did not match
 ##### July 22, 2014:
 Added `-c` option to create passwords without special characters.
 
-Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (unless specified otherwise by the `-t` option).
+Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (or other amount of time specified by the `-t` option).
 
 Added `-v` option to verify entered passphrases twice, to ensure correct input when setting password on a website.
