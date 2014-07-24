@@ -90,6 +90,10 @@ Passwords did not match
 ```
 
 ### Changelog:
+
+##### July 24, 2014:
+Added/updated binaries for Linux/Mac/Windows i386/amd64.
+
 ##### July 22, 2014:
 Added `-c` option to create passwords without special characters.
 
