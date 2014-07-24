@@ -4,8 +4,6 @@ A simple tool written in Go that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service.
 
-##### GUI coming soon!
-
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
 for yourself that will allow unique passphases for every website, such
@@ -13,7 +11,7 @@ as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
 
-Linux and Windows binaries are available for download from the this repository or the <a href="https://mw.gg/passera" target="_blank">project website</a>.
+Linux/Mac/Windows binaries are available for download from the this repository or the <a href="https://mw.gg/passera" target="_blank">project website</a>.
 
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
