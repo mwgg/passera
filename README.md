@@ -94,11 +94,9 @@ Passwords did not match
 ### Changelog:
 
 ##### July 24, 2014:
-Added/updated binaries for Linux/Mac/Windows i386/amd64.
+* Added/updated binaries for Linux/Mac/Windows i386/amd64.
 
 ##### July 22, 2014:
-Added `-c` option to create passwords without special characters.
-
-Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (or other amount of time specified by the `-t` option).
-
-Added `-v` option to verify entered passphrases twice, to ensure correct input when setting password on a website.
+* Added `-c` option to create passwords without special characters.
+* Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (or other amount of time specified by the `-t` option).
+*Added `-v` option to verify entered passphrases twice, to ensure correct input when setting password on a website.
