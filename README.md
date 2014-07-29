@@ -11,7 +11,7 @@ as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
 
-Linux/Mac/Windows binaries are available for download from the this repository or the <a href="https://mw.gg/passera" target="_blank">project website</a>.
+Linux/Mac/Windows binaries are available for download from the this repository.
 
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
@@ -86,6 +86,10 @@ $ passera -v
 >>> 
 Passwords did not match
 ```
+
+### To Do & WIP:
+* Linux/Mac/Windows GUI
+* Android app
 
 ### Changelog:
 
