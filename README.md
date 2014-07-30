@@ -93,7 +93,6 @@ Passwords did not match
 ![Passera on Android coming up SOON!](http://mw.gg/i/4Gq3rPN.png)
 
 ### Changelog:
-
 ##### July 24, 2014:
 * Added/updated binaries for Linux/Mac/Windows i386/amd64.
 
