@@ -44,7 +44,7 @@ Requires Android 3.0+
 
 * [Android app](http://mw.gg/d/gg.mw.passera.apk "Passera for Android 3.0+")
 
-# Usage
+# Command-line tool
 The software does one thing and does it good. Fire it up and it will
 prompt you for the passphase you chose for a particular service you
 wish to login. It will produce your password and copy it to clipboard,
