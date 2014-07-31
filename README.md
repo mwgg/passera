@@ -108,6 +108,9 @@ The new Android app for Passera has been released. It is fairly self-explanatory
 
 ### Changelog:
 
+##### July 31, 2014:
+* Android app released.
+
 ##### July 24, 2014:
 * Added/updated binaries for Linux/Mac/Windows i386/amd64.
 
