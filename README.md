@@ -11,8 +11,6 @@ as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
 
-Linux/Mac/Windows binaries are available for download from the this repository.
-
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
 This software is for privacy-aware people that understand the need to
@@ -30,6 +28,21 @@ To make it somewhat more conspicuous, when you start Passera it copies
 a random password to clipboard. The real password is then only stored
 in clipboard for 10 seconds, before being overwritten by another
 random string.
+
+# Downloads
+Direct links to the latest builds are listed here.
+
+#### Command line tool
+
+* [Linux executable](http://mw.gg/d/passera-linux-386 "Passera for Linux")
+* [Mac OSX executable](http://mw.gg/d/passera-darwin-386 "Passera for Mac OSX")
+* [Windows executable](http://mw.gg/d/passera-windows-386.exe "Passera for Microsoft Windows")
+
+#### Android app
+
+Requires Android 3.0+
+
+* [Android app](http://mw.gg/d/gg.mw.passera.apk "Passera for Android 3.0+")
 
 # Usage
 The software does one thing and does it good. Fire it up and it will
@@ -86,14 +99,15 @@ $ passera -v
 >>> 
 Passwords did not match
 ```
+# Android app
+The new Android app for Passera has been released. It is fairly self-explanatory and acts in similar ways to the command-line tool. It can copy generated passwords to clipboard or show it on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of cryptographic algorythms working behind the scenes and is required redundancy to keep your passwords unhackable.
+![Passera on Android](http://mw.gg/i/passera_android.png)
 
 ### To Do & WIP:
 * Linux/Mac/Windows GUI
-* Android app
-
-![Passera on Android coming up SOON!](http://mw.gg/i/4Gq3rPN.png)
 
 ### Changelog:
+
 ##### July 24, 2014:
 * Added/updated binaries for Linux/Mac/Windows i386/amd64.
 
