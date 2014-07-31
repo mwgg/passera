@@ -4,6 +4,8 @@ A simple tool that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service. It is available as a command-line tool for Linux/Mac/Windows and an Android app.
 
+Current build versions: 0.1.5
+
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
 for yourself that will allow unique passphases for every website, such
