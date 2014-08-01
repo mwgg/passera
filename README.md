@@ -36,9 +36,9 @@ Direct links to the latest builds are listed here.
 
 #### Command line tool
 
-* [Linux executable](http://mw.gg/d/passera-linux.tar.gz "Passera for Linux")
-* [Mac OSX executable](http://mw.gg/d/passera-osx.tar.gz "Passera for Mac OSX")
-* [Windows executable](http://mw.gg/d/passera-windows.zip "Passera for Microsoft Windows")
+* [Linux executable](http://mw.gg/d/passera-linux.tar.gz "Passera for Linux") (i386/x64/ARMv7)
+* [Mac OSX executable](http://mw.gg/d/passera-osx.tar.gz "Passera for Mac OSX") (i386/x64)
+* [Windows executable](http://mw.gg/d/passera-windows.zip "Passera for Microsoft Windows") (i386/x64)
 
 #### Android app
 
