@@ -32,8 +32,6 @@ random string.
 # Downloads
 Direct links to the latest builds are listed here.
 
-##### Current build versions: 0.1.5
-
 #### Command line tool
 
 * [Linux executable](http://mw.gg/d/passera-linux.tar.gz "Passera for Linux") (i386/x64/ARMv7)
