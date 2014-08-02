@@ -1,6 +1,6 @@
 # Passera
 
-<div style="float: left"><img src="http://mw.gg/i/passera_logo.png" /></div>
+<div style="float: left"><img src="http://mw.gg/i/passera_logo.png" />
 A simple tool that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service. It is available as a command-line tool for Linux/Mac/Windows and an Android app.
@@ -11,7 +11,7 @@ for yourself that will allow unique passphases for every website, such
 as combining website name/url with a phrase that you would not forget.
 To login, fire up Passera and enter the password you chose and your
 real password will be copied to clipboard.
-
+</div>
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
 This software is for privacy-aware people that understand the need to
