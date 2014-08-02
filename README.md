@@ -1,6 +1,6 @@
 # Passera
 
-<img style="float: left" src="http://mw.gg/i/passera_logo.png" />
+<div style="float: left"><img src="http://mw.gg/i/passera_logo.png" /></div>
 A simple tool that allows users to have strong unique
 passwords for each website, without the need to store them either
 locally or with an online service. It is available as a command-line tool for Linux/Mac/Windows and an Android app.
