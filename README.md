@@ -107,7 +107,7 @@ Passwords did not match
 The new Android app for Passera has been released. It is fairly self-explanatory and acts in similar ways to the command-line tool. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorythms working behind the scenes and is a required redundancy to keep your passwords unhackable.
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
-### To Do & WIP:
+# To Do & WIP:
 * Linux/Mac/Windows GUI
 
 ### Changelog:
