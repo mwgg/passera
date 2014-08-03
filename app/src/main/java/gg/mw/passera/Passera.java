@@ -197,8 +197,11 @@ public class Passera extends ActionBarActivity {
         if ( phraseRep.equals(phrase) || phraseRep.equals("")) {
 
             showingLabel.setText( "" );
+            progressBar.setVisibility(View.VISIBLE);
             buttonDo.setEnabled(false);
             buttonShow.setEnabled(false);
+            pwField.setText("");
+            pwRep.setText("");
             scrollView.scrollTo(0, showingLabel.getTop());
 
             new Thread(new Runnable() {
@@ -218,6 +221,7 @@ public class Passera extends ActionBarActivity {
                                 buttonDo.setEnabled(true);
                                 buttonShow.setEnabled(true);
                                 progressBar.setProgress(0);
+                                progressBar.setVisibility(View.INVISIBLE);
 
                             }
                         });
@@ -266,8 +270,11 @@ public class Passera extends ActionBarActivity {
         if ( phraseRep.equals(phrase) || phraseRep.equals("")) {
 
             showingLabel.setText( "" );
+            progressBar.setVisibility(View.VISIBLE);
             buttonDo.setEnabled(false);
             buttonShow.setEnabled(false);
+            pwField.setText("");
+            pwRep.setText("");
             scrollView.scrollTo(0, showingLabel.getTop());
 
             new Thread(new Runnable() {
@@ -296,6 +303,7 @@ public class Passera extends ActionBarActivity {
                                 buttonDo.setEnabled(true);
                                 buttonShow.setEnabled(true);
                                 progressBar.setProgress(0);
+                                progressBar.setVisibility(View.INVISIBLE);
 
                             }
                         });

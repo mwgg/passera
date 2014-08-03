@@ -6,10 +6,13 @@
     <string name="phrase_rep">Again (optional)</string>
     <string name="copy">Copy to clipboard</string>
     <string name="show">Show on screen</string>
-    <string name="desc">Passera will turn anything entered here into a secure password. Read more on https://github.com/mwgg/passera</string>
+    <string name="desc">Passera will turn anything entered here into a secure password.\nGet the desktop app and read more on https://github.com/mwgg/passera</string>
     <string name="action_about">About</string>
     <string name="chars">Use special characters</string>
     <string name="pwlen">Password length</string>
     <string name="hide">Hide</string>
+    <string name="title_activity_about">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
