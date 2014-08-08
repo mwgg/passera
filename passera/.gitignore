@@ -1,0 +1,7 @@
+.gradle
+/local.properties
+/.idea
+/.navigation
+.DS_Store
+/build
+/*~
