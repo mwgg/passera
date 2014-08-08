@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+                android:id="@+id/desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:hint="@string/desc"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phrase"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/pwrep"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phrase_rep"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/pwlenhint"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:hint="@string/pwlen"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/pwlen"
+            android:layout_height="wrap_content"
+            android:hint="@string/pwlen"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="16"
+            android:inputType="number"
+            android:layout_width="40dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/checkbox_chars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="@string/chars"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button_do"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/copy"
+                android:layout_gravity="center_horizontal"
+                android:onClick="pw" />
+
+            <Button
+                android:id="@+id/button_show"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/show"
+                android:layout_gravity="center_horizontal"
+                android:onClick="pwshow" />
+</LinearLayout>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/showing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:typeface="monospace"
+                    android:hint=""
+                    android:textIsSelectable="true" />
+
+                <Button
+                    android:id="@+id/hide"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hide"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="pwhide"
+                    android:visibility="invisible" />
+
+</LinearLayout>
+
+</ScrollView>
