@@ -46,7 +46,7 @@ Direct links to the latest builds are listed here.
 
 Requires Android 3.0+
 
-* [Android app](http://mw.gg/d/gg.mw.passera.apk "Passera for Android 3.0+")
+* [Download from F-Droid](https://f-droid.org/repository/browse/?fdfilter=passera&fdid=gg.mw.passera "Passera for Android on F-Droid")
 
 # Command-line tool
 The software does one thing and does it good. Fire it up and it will
