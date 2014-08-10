@@ -22,16 +22,18 @@ company, or trusting them to a single file on your disk.
   <img src="http://mw.gg/i/passera_full_logo.png" />
 </p>
 
-Passwords created with Passera are extremely difficult to bruteforce
-and impossible to revert back to the original regardless of attacker's
-knowledge of the source code. If one of your passwords is compromised
-after an attack on you or a web service, all your other passwords are
-safe with you.
-
 To make it somewhat more conspicuous, when you start Passera it copies
 a random password to clipboard. The real password is then only stored
 in clipboard for 10 seconds, before being overwritten by another
 random string.
+
+# Password security considerations
+
+Passera is not designed to produce a hash of a given string by reinventing the wheel of cryptography. Instead, it produces a unique string of specified length, suitable for usage as a strong password. The cryptographic methods used are ensuring that the produced passwords are as "random" as possible, and are absolutely impossible to trace back to original passphrases.
+
+Passwords, produced by Passera are impossible to bruteforce, since it would take an extremely long time. If a password gets leaked from a compromised website, an attacker would not be able to determine any of your other passwords. And if the attacker is aware that Passera has been used to create the password, bruteforcing with intent to find out the original passphrase would also take an extremely long time.
+
+Passera does not ask for a website URL or a "master password" when generating a password, because these values would be included into the hashing algorythm in a particular way, potentially known to an attacker. Instead, users have the freedom to combine anything in any order, shape or form in the initial passphrase, making it exponentially more difficult to bruteforce, to the point of being impossible.
 
 # Downloads
 Direct links to the latest builds are listed here.
@@ -105,12 +107,16 @@ Passwords did not match
 ```
 # Android app
 The new Android app for Passera has been released. It is fairly self-explanatory and acts in similar ways to the command-line tool. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorythms working behind the scenes and is a required redundancy to keep your passwords unhackable.
+
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
 # To Do & WIP:
 * Linux/Mac/Windows GUI
 
 ### Changelog:
+
+##### August 9, 2014:
+* Passera Android app added to F-Droid FOSS catalog/repo.
 
 ##### August 1, 2014:
 * Linux ARMv7 binary added.
