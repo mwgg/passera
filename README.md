@@ -27,7 +27,7 @@ a random password to clipboard. The real password is then only stored
 in clipboard for 10 seconds, before being overwritten by another
 random string.
 
-# Password security considerations
+## Password security considerations
 
 Passera is not designed to produce a hash of a given string by reinventing the wheel of cryptography. Instead, it produces a unique string of specified length, suitable for usage as a strong password. The cryptographic methods used are ensuring that the produced passwords are as "random" as possible, and are absolutely impossible to trace back to original passphrases.
 
@@ -35,7 +35,7 @@ Passwords, produced by Passera are impossible to bruteforce, since it would take
 
 Passera does not ask for a website URL or a "master password" when generating a password, because these values would be included into the hashing algorythm in a particular way, potentially known to an attacker. Instead, users have the freedom to combine anything in any order, shape or form in the initial passphrase, making it exponentially more difficult to bruteforce, to the point of being impossible.
 
-# Downloads
+## Downloads
 Direct links to the latest builds are listed here.
 
 #### Command line tool
@@ -50,7 +50,7 @@ Requires Android 3.0+
 
 * [Download from F-Droid](https://f-droid.org/repository/browse/?fdfilter=passera&fdid=gg.mw.passera "Passera for Android on F-Droid")
 
-# Command-line tool
+## Command-line tool
 The software does one thing and does it good. Fire it up and it will
 prompt you for the passphase you chose for a particular service you
 wish to login. It will produce your password and copy it to clipboard,
@@ -105,12 +105,12 @@ $ passera -v
 >>> 
 Passwords did not match
 ```
-# Android app
+## Android app
 The new Android app for Passera has been released. It is fairly self-explanatory and acts in similar ways to the command-line tool. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorythms working behind the scenes and is a required redundancy to keep your passwords unhackable.
 
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
-# To Do & WIP:
+## To Do & WIP:
 * Linux/Mac/Windows GUI
 
 ### Changelog:
