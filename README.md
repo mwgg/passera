@@ -6,7 +6,7 @@ locally or with an online service. It is available as a command-line tool for Li
 
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
-for yourself that will allow unique passphases for every website, such
+for yourself that will allow unique passphrases for every website, such
 as combining website name/URL with a phrase that you would not forget.
 To login, fire up Passera and enter the passphrase you chose and your
 real password will be copied to clipboard.
