@@ -7,13 +7,13 @@ locally or with an online service. It is available as a command-line tool for Li
 Passera turns any entered text into a strong password up to 64
 characters long and copies it to clipboard. Figure out a decent system
 for yourself that will allow unique passphases for every website, such
-as combining website name/url with a phrase that you would not forget.
-To login, fire up Passera and enter the password you chose and your
+as combining website name/URL with a phrase that you would not forget.
+To login, fire up Passera and enter the passphrase you chose and your
 real password will be copied to clipboard.
 
 #### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
 
-This software is for privacy-aware people that understand the need to
+This software is for privacy-aware people who understand the need to
 have strong unique passwords for each website, yet don't want to use
 any password managing software or services. Relying on password managing software means trusting your passwords to be kept safe by a third-party
 company, or trusting them to a single file on your disk.
@@ -31,12 +31,12 @@ random string.
 
 Passera is not designed to produce a hash of a given string by reinventing the wheel of cryptography. Instead, it produces a unique string of specified length, suitable for usage as a strong password. The cryptographic methods used are ensuring that the produced passwords are as "random" as possible, and are absolutely impossible to trace back to original passphrases.
 
-Passwords, produced by Passera are impossible to bruteforce, since it would take an extremely long time. If a password gets leaked from a compromised website, an attacker would not be able to determine any of your other passwords. And if the attacker is aware that Passera has been used to create the password, bruteforcing with intent to find out the original passphrase would also take an extremely long time.
+Passwords, produced by Passera are impossible to brute-force, since it would take an extremely long time (as opposed to using combinations of real words and sentences as passwords). If a password gets leaked from a compromised website, an attacker would not be able to determine any of your other passwords. And if the attacker is aware that Passera has been used to create the password, brute-forcing with intent to find out the original passphrase would also take an extremely long time.
 
-Passera does not ask for a website URL or a "master password" when generating a password, because these values would be included into the hashing algorythm in a particular way, potentially known to an attacker. Instead, users have the freedom to combine anything in any order, shape or form in the initial passphrase, making it exponentially more difficult to bruteforce, to the point of being impossible.
+Passera does not ask for a website URL or a "master password" when generating a password, because these values would be included into the hashing algorithm in a particular way, potentially known to an attacker. Instead, users have the freedom to combine anything in any order, shape or form in the initial passphrase, making it exponentially more difficult to brute-force, to the point of being impossible.
 
 ## Downloads
-Direct links to the latest builds are listed here.
+Direct download links to the latest builds.
 
 #### Command line tool
 
@@ -106,7 +106,7 @@ $ passera -v
 Passwords did not match
 ```
 ## Android app
-The new Android app for Passera has been released. It is fairly self-explanatory and acts in similar ways to the command-line tool. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorythms working behind the scenes and is a required redundancy to keep your passwords unhackable.
+The new Android app for Passera has been released. It is self-explanatory and behaves in similar ways to the command-line tool to produce compatible passwords. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorithms working behind the scenes and is a required redundancy to keep your passwords unhackable.
 
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
