@@ -19,7 +19,7 @@ any password managing software or services. Relying on password managing softwar
 company, or trusting them to a single file on your disk.
 
 <p align="center">
-  <img src="http://mw.gg/i/passera_full_logo.png" />
+  <img alt="Passera" title="Passera for Linux/Mac/Windows/Android" src="http://mw.gg/i/passera_full_logo.png" />
 </p>
 
 To make it somewhat more conspicuous, when you start Passera it copies
@@ -131,4 +131,9 @@ The new Android app for Passera has been released. It is self-explanatory and be
 * Added `-c` option to create passwords without special characters.
 * Behaviour of the `-s` option changed, shown passwords no longer saved in bash/terminal history and gets overwritten after 10 seconds (or other amount of time specified by the `-t` option).
 *Added `-v` option to verify entered passphrases twice, to ensure correct input when setting password on a website.
+
+-----
+<p align="center">
+<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS
+</p>
 
