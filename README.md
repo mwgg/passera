@@ -111,7 +111,11 @@ The new Android app for Passera has been released. It is self-explanatory and be
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
 ## To Do & WIP:
+* **Firefox Extension**
 * Linux/Mac/Windows GUI
+
+### Known issues:
+* Windows i386 binary generates improper passwords, not recommended for use. Windows x64 binary appears to work properly.
 
 ### Changelog:
 
@@ -134,6 +138,4 @@ The new Android app for Passera has been released. It is self-explanatory and be
 
 -----
 <p align="center">
-<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS
-</p>
-
+<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS</p>
