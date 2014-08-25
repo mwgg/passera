@@ -44,6 +44,12 @@ Direct download links to the latest builds.
 * [Mac OSX executable](http://mw.gg/d/passera-osx.tar.gz "Passera for Mac OSX") (i386/x64)
 * [Windows executable](http://mw.gg/d/passera-windows.zip "Passera for Microsoft Windows") (i386/x64)
 
+#### Firefox extension
+
+Requires Firefox 30+
+
+* [Download .xpi file](http://mw.gg/d/passera-firefox.xpi) (Coming soon to Mozilla Add-ons)
+
 #### Android app
 
 Requires Android 3.0+
@@ -105,13 +111,23 @@ $ passera -v
 >>> 
 Passwords did not match
 ```
+
+## Firefox extension
+
+Allows you easy access to Passera when using Firefox. It is self-explanatory and behaves in similar ways to the command-line tool and is almost identical to the Android app. In the current version it is only possible to show the generated password and manually copy it to clipboard. In future versions it will be possible to transfer the password directly to the chosen password fields on a webpage.
+
+![Passera on Android](http://mw.gg/i/passera_firefox_24aug14.png)
+
 ## Android app
-The new Android app for Passera has been released. It is self-explanatory and behaves in similar ways to the command-line tool to produce compatible passwords. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorithms working behind the scenes and is a required redundancy to keep your passwords unhackable.
+The new Android app for Passera has been released. It can copy generated passwords to clipboard or show them on the screen. You may find password generation being fairly slow on some devices, this is due to the nature of the cryptographic algorithms working behind the scenes and is a required redundancy to keep your passwords unhackable.
 
 ![Passera on Android](http://mw.gg/i/passera_android_2aug14.png)
 
 ## To Do & WIP:
 * Linux/Mac/Windows GUI
+
+### Known issues:
+* Windows i386 binary generates improper passwords, not recommended for use. Windows x64 binary appears to work properly.
 
 ### Changelog:
 
@@ -134,6 +150,4 @@ The new Android app for Passera has been released. It is self-explanatory and be
 
 -----
 <p align="center">
-<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS
-</p>
-
+<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS</p>
