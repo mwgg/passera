@@ -1,0 +1,13 @@
+{
+  "name": "passera",
+  "title": "Passera",
+  "id": "jid1-6MpkhohIAySLbA",
+  "description": "Passera turns entered text into a strong password up to 64 characters long.",
+  "author": "mwgg",
+  "license": "GPLv3",
+  "version": "0.1.1",
+  "icon": "data/icon-48.png",
+  "icon64": "data/icon-64.png",
+  "homepage": "https://github.com/mwgg/passera",
+  "permissions": {"private-browsing": true}
+}
