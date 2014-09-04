@@ -48,7 +48,7 @@ Direct download links to the latest builds.
 
 Requires Firefox 30+
 
-* [Download .xpi file](http://mw.gg/d/passera-firefox.xpi) (Coming soon to Mozilla Add-ons)
+* [Download from Mozilla Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/passera/)
 
 #### Android app
 
