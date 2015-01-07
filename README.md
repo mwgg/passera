@@ -11,7 +11,7 @@ as combining website name/URL with a phrase that you would not forget.
 To login, fire up Passera and enter the passphrase you chose and your
 real password will be copied to clipboard.
 
-#### Turn `githubPasswd123` into `dpu7{Lrby(vQLd8m`
+#### Turn `MyFancy#Github%password` into `@ZfKS*ePs1ll9yRG`
 
 This software is for privacy-aware people who understand the need to
 have strong unique passwords for each website, yet don't want to use
@@ -31,7 +31,9 @@ random string.
 
 Passera is not designed to produce a hash of a given string by reinventing the wheel of cryptography. Instead, it produces a unique string of specified length, suitable for usage as a strong password. The cryptographic methods used are ensuring that the produced passwords are as "random" as possible, and are absolutely impossible to trace back to original passphrases.
 
-Passwords, produced by Passera are impossible to brute-force, since it would take an extremely long time (as opposed to using combinations of real words and sentences as passwords). If a password gets leaked from a compromised website, an attacker would not be able to determine any of your other passwords. And if the attacker is aware that Passera has been used to create the password, brute-forcing with intent to find out the original passphrase would also take an extremely long time.
+When it comes to cryptography, a password's security is multiplied by the complexity of the passphrase. Users are strongly advised to use passphrases that would be to unique to them. This can be achieved by including "keywords", such as email addresses, pet names, city names, etc. This ensures that passphrases are personal to each individual user.
+
+Passwords produced by Passera, being random combinations of symbols, are impossible to brute-force, since it would take an extremely long time (as opposed to using combinations of real words and sentences as passwords). If a password gets leaked from a compromised website, an attacker would not be able to determine any of your other passwords. And if the attacker is aware that Passera has been used to create the password, brute-forcing with intent to find out the original passphrase would also take an extremely long time due to the nature of the cryptographic algorythms.
 
 Passera does not ask for a website URL or a "master password" when generating a password, because these values would be included into the hashing algorithm in a particular way, potentially known to an attacker. Instead, users have the freedom to combine anything in any order, shape or form in the initial passphrase, making it exponentially more difficult to brute-force, to the point of being impossible.
 
