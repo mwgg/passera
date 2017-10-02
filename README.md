@@ -152,4 +152,4 @@ The new Android app for Passera has been released. It can copy generated passwor
 
 -----
 <p align="center">
-<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 1C4hvhZbosadZHbRrM91eDGRsh8fEKieUS</p>
+<img alt="Bitcoin" title="Donate with Bitcoin" src="http://mw.gg/i/bitcoin.png" /> 3HrjGijbDvhxSNZXZkmAqBH7eFfKyXRmfm</p>
