@@ -1,3 +1,5 @@
+#### Note: I no longer have the time to continue development of Passera, but pull requests are more than welcome! The number one requested item would be an updated Firefox extension, since the latest API change broke the current release.
+
 # Passera
 
 A simple tool that allows users to have strong unique
